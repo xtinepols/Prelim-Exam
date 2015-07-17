@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first"
+        android:hint="First number"
+        android:layout_weight="1"
+        android:layout_margin="20px"
+        android:background="@color/colorPrimary" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/second"
+        android:hint="Second number"
+        android:layout_weight="1"
+        android:layout_margin="20px"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="+"
+                android:id="@+id/btnAdd"
+                android:layout_weight="1"
+                android:layout_margin="20px"
+                android:background="@color/colorPrimaryDark"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="X"
+                android:id="@+id/btnMulti"
+                android:layout_weight="1"
+                android:layout_margin="20px"
+                android:background="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="-"
+                android:id="@+id/btnSub"
+                android:layout_weight="1"
+                android:layout_margin="20px"
+                android:background="@color/colorPrimaryDark"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="/"
+                android:id="@+id/btnDivide"
+                android:layout_weight="1"
+                android:layout_margin="20px"
+                android:background="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="C"
+            android:id="@+id/btnClear"
+            android:layout_weight="1"
+            android:layout_margin="20px"
+            android:background="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:id="@+id/btnExit"
+        android:layout_weight="1"
+        android:layout_margin="20px"
+        android:background="@color/colorPrimaryDark"/>
+
+</LinearLayout>
